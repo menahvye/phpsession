@@ -3,7 +3,7 @@
 session_start();
 
 // 2. Si l'utilisateur n'est pas connecté, le rediriger vers la page de connexion
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['authenticated'])) {
     header('Location: login.php');
 }
 
